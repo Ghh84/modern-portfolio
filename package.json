@@ -1,0 +1,14 @@
+{
+  "name": "modern-portfolio",
+  "version": "1.0.0",
+  "description": "Responsible portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Ghebrehiwet Hagos",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.7"
+  }
+}
