@@ -54,12 +54,11 @@
   
     .about-info {
       grid-template-areas:
-        'bioimage'
+        'bioimg'
         'bio'
         'job1'
         'job2'
         'job3';
-  
       grid-template-columns: 1fr;
     }
   
