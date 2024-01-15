@@ -62,6 +62,24 @@ main {
       }
     }}
 
+.home-grid{
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    'bioimg bio bio'
+    ;
+    grid-template-columns: repeat(3,1fr);
+    .bio-image{
+        grid-area: bioimg;
+        margin: auto;
+        border-radius: 50%;
+        border: $secondary-color 3px solid;
+    }
+    .bio{
+        grid-area: bio;
+        font-size: 1.5rem;
+    }
+}
 .about-info{
     display: grid;
     gap: 30px;
@@ -182,8 +200,20 @@ main {
 }
 #main-footer{
     text-align: center;
+    align-items: center;
     padding: 1rem;
     color: set-text-color($primary-color);
     background: darken($primary-color,10);
+    border-bottom: none;
     height: 65px;
+    .icons {  
+        a {
+          padding: 2rem;
+    
+          &:hover {
+            color: $secondary-color;
+          @include easeOut
+          }
+        }
+      }
 }
