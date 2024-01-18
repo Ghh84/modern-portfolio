@@ -31,3 +31,14 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+function changePage(pageNumber) {
+  var paginationItems = document.getElementById('pagination').getElementsByTagName('li');
+  
+  // Remove 'active' class from all pagination items
+  for (var i = 0; i < paginationItems.length; i++) {
+      paginationItems[i].classList.remove('active');
+  }
+
+  // Add 'active' class to the clicked pagination item
+  paginationItems[pageNumber - 1].classList.add('active');
+}
