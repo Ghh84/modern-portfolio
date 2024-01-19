@@ -41,4 +41,11 @@ function changePage(pageNumber) {
 
   // Add 'active' class to the clicked pagination item
   paginationItems[pageNumber - 1].classList.add('active');
+
+  // Change the src attribute of all images with class 'gallery-img'
+  var images = document.getElementsByClassName('gallery-img');
+  for (var i = 0; i < images.length; i++) {
+      images[i].src = `./img/nature/nature${pageNumber}.jpg`;
+      images[i].alt = `./img/nature/nature ${pageNumber}`;
+  }
 }
