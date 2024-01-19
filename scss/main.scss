@@ -252,28 +252,31 @@ main {
 }
 // pagination
 .pagination {
-    display: inline-block;
-    margin-left: 35%;
-    
-  }
-  
-  .pagination a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: 40%;
+}
+
+.pagination li {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination li a {
     text-decoration: none;
-    transition: background-color .3s;
+    padding: 5px 10px;
     border: 1px solid #ddd;
-    font-size: 22px;
-  }
-  
-  .pagination a.active {
-    background-color: #4CAF50;
-    color: white;
-    border: 1px solid #4CAF50;
-  }
-  
-  .pagination a:hover:not(.active) {background-color: #ddd;}
+    background-color: #e4830c;
+    color: #0e0f0f;
+    border-radius: 5px;
+}
+
+.pagination li.active a {
+    background-color: #007BFF;
+    color: #fff;
+}
+//main footer
 #main-footer{
     text-align: center;
     align-items: center;
