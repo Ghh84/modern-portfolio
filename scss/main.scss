@@ -276,6 +276,25 @@ main {
     background-color: #007BFF;
     color: #fff;
 }
+#main-content {
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+  
+}
+.gallery-img {
+    max-width: 100%;
+    max-height: 70%;
+    display: block;
+    border: 2px solid #4608f0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    &:hover{
+        opacity: 0.5;
+        border-color: $secondary-color;
+        @include easeOut
+    }
+}
 //main footer
 #main-footer{
     text-align: center;
