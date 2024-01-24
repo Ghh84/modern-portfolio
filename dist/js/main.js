@@ -10,6 +10,19 @@ let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
 
+  // Number of images
+  var totalImages = 4; // Change this based on your actual number of images
+  var imagesPerPage = 1; // Change this based on how many images you want to show per page
+  var totalPages = Math.ceil(totalImages / imagesPerPage);
+
+  // Generate pagination dynamically
+  var pagination = document.getElementById('pagination');
+  for (var i = 1; i <= totalPages; i++) {
+      var li = document.createElement('li');
+      li.innerHTML = '<a href="#" onclick="changePage(' + i + ')">' + i + '</a>';
+      pagination.appendChild(li);
+  }
+
 function toggleMenu() {
   if (!showMenu) {
     menuBtn.classList.add('close');
@@ -40,7 +53,12 @@ function changePage(pageNumber) {
   }
 
   // Add 'active' class to the clicked pagination item
-  paginationItems[pageNumber - 1].classList.add('active');
+  paginationItems[pageNumber-1].classList.add('active');
+
+  // Change the src attribute of the image based on the pagination click
+        var img = document.querySelector('.gallery-img');
+        img.src = 'getImage.php?page=' + pageNumber;
+        img.alt = 'Image ' + pageNumber;
 
   // Change the src attribute of all images with class 'gallery-img'
   var images = document.getElementsByClassName('gallery-img');
