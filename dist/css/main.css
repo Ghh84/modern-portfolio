@@ -313,6 +313,45 @@ main {
   width: 100%;
   margin-top: 40px; }
 
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-left: 40%; }
+
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer; }
+
+.pagination li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #e4830c;
+  color: #0e0f0f;
+  border-radius: 5px; }
+
+.pagination li.active a {
+  background-color: #007BFF;
+  color: #fff; }
+
+#main-content {
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px; }
+
+.gallery-img {
+  max-width: 100%;
+  max-height: 70%;
+  display: block;
+  border: 2px solid #4608f0;
+  border-radius: 5px;
+  margin-bottom: 10px; }
+  .gallery-img:hover {
+    opacity: 0.5;
+    border-color: #b3db24;
+    transition: all 0.5s ease-out; }
+
 #main-footer {
   text-align: center;
   align-items: center;
