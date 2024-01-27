@@ -70,6 +70,8 @@ function sendMessage(){
   var message = document.getElementById("message").value;
   if (!validateName(name)) {
     alert("Name is invalid");
+      name.focus();
+
   }
   if (!validateEmail(email)) {
       alert("Email is invalid");

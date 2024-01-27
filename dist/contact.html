@@ -51,6 +51,11 @@
             Gallary
           </a>
         </li>
+        <li class="nav-item">
+          <a href="login.html" class="nav-link">
+            Login
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -82,16 +87,16 @@
       <form>
         <div >
           <label for="exampleInputEmail1" class="label">Name:</label>
-          <input type="textfield" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="textfield" class="form-control" id="name" aria-describedby="emailHelp">
         </div>
         <div >
           <label for="exampleInputPassword1" class="label">Email:</label>
-          <input type="email" class="form-control" id="exampleInputPassword1">
+          <input type="email" class="form-control" id="email">
         </div>
         <div >
           <label for="multiLineInput"> <!-- Add the label if you want -->
             <p>This is an input element that can include new lines:</p>
-            <textarea rows="5" cols="50" id="multiLineInput"></textarea>
+            <textarea rows="5" cols="50" id="message"></textarea>
           </label> 
           <!-- rows for length, cols for width. Both aren't required -->
         </div>
@@ -99,7 +104,7 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="check-label" for="exampleCheck1">Check me out</label>
         </div>
-        <button type="submit" class="btn-submit">Submit</button>
+        <button type="submit" onclick="sendMessage()" class="btn-submit">Submit</button>
       </form>
   </div>
 
