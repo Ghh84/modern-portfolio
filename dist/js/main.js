@@ -63,3 +63,32 @@ function changePage(pageNumber) {
       images[i].alt = `./img/nature/nature ${pageNumber}`;
   }
 }
+function sendMessage(){
+  // Get the values of the input fields
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  if (!validateName(name)) {
+    alert("Name is invalid");
+  }
+  if (!validateEmail(email)) {
+      alert("Email is invalid");
+ }
+  else{alert(message)} 
+}
+
+function validateEmail(email) {
+  // Regular expression for email validation
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  // Test the email against the regex pattern
+  return emailRegex.test(email);
+}
+function validateName(name) {
+  // Regular expression for name validation
+  var nameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
+  
+  // Test the name against the regex pattern
+  return nameRegex.test(name);
+}
+
