@@ -1,0 +1,62 @@
+This project is a modern portfolio template built using HTML, SCSS, and JavaScript.
+
+Table of Contents
+Overview
+Features
+Setup
+Usage
+Folder Structure
+Contributing
+License
+Overview
+The modern portfolio template is designed to showcase my skills, projects, and experiences in a visually appealing and interactive manner. It includes sections for a personal bio, portfolio projects, skills, and contact information.
+
+Features
+Responsive design for various screen sizes (desktop, tablet, mobile).
+Smooth scrolling and navigation.
+Interactive project gallery with modal popups.
+Customizable SCSS styles for easy theming.
+JavaScript functionality for dynamic content loading.
+Setup
+To set up the project locally, follow these steps:
+
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/modern-portfolio.git
+Navigate to the project directory:
+
+bash
+Copy code
+cd modern-portfolio
+Open the index.html file in your web browser to view the portfolio.
+
+Usage
+Customize the portfolio with your own content by modifying the HTML, SCSS, and JavaScript files. Add your projects, skills, and contact information to personalize the portfolio.
+
+Folder Structure
+Copy code
+modern-portfolio/
+│
+├── dist/
+│   ├── css/
+│   │   └── main.css
+│   ├── img/
+│   └── js/
+│   │    └── login.js
+│   │    └── main.js
+│   │    └── personal.js
+│   ├── about.html
+│   │─  contact.html
+│   ├── index
+│   └── login
+├── scss
+├── README.md
+└── LICENSE
+Save to grepper
+Contributing
+Contributions are welcome! If you find any issues or would like to suggest improvements, please create a pull request or open an issue on the GitHub repository.
+
+License
+This project is licensed under ......
