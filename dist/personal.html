@@ -67,72 +67,20 @@
       Personal
       <span class="text-secondary">Page</span>
     </h1>
-    <h2 class="sm-heading">
-      <p>Greetings and thank you for stepping into my creative space! This gallery is a 
-        curated collection of my artistic endeavors, capturing moments, emotions, and 
-        expressions through photography, digital art:</p>
-    </h2>
-        <div class="item">
-            <a href="#!" target="_blank"></a>
-                <img class='gallery-img' src="./img/project/project1.jpg" alt="">   
-            </a>
-        </div>  
-        <div class="item">
-            <a href="#!" target="_blank">
-                <img  class='gallery-img' src="./img/project/project2.jpg" alt="">
-            </a>
-        </div> 
-        <div class="item">
-            <a href="#!" target="_blank">
-                <img class='gallery-img' src="./img/project/project3.jpg" alt="">
-            </a>
-        </div> 
-        <div class="item">
-            <a href="#!" target="_blank">
-                <img class='gallery-img' src="./img/project/project4.jpg" alt="">
-            </a>
-        </div> 
-        <div class="item">
-            <a href="#!" target="_blank">
-                <img class='gallery-img' src="./img/project/project5.jpg" alt="">
-            </a>
-        </div>     
-        <div class="item">
-          <a href="#!" target="_blank">
-              <img class='gallery-img' src="./img/project/project6.jpg" alt="">
-          </a>
-      </div>    
-    </div> -->
-    <div id="main-content">
-      <!-- Initial content -->
-      <img class="gallery-img" src="img/nature/nature0.jpg" alt="Image">
-    </div>
-  </main>
-
-  <ul class="pagination" id="pagination">
-  </ul>
-
-
-<footer id="main-footer">
-  <div class="icons">
-    follow me ...
-    <a href="https://twitter.com/" target="_blank">
-      <i class="fab fa-twitter fa-2x"></i>
-    </a>
-    <a href="https://www.facebook.com/" target="_blank">
-      <i class="fab fa-facebook fa-2x"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/ghebrehiwet-hagos-7426781b7/" target="_blank">
-      <i class="fab fa-linkedin fa-2x"></i>
-    </a>
-    <a href="https://github.com/Ghh84" target="_blank">
-      <i class="fab fa-github fa-2x"></i>
-    </a>
-    Copyright &copy; 2024
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./img/project/project2.jpg" alt="image 1">   
+        <img src="./img/project/project1.jpg" alt="">
+        <img src="./img/project/project3.jpg" alt="">
+        <img src="./img/project/project4.jpg" alt="">
+      </div>
+      <div class="buttons">
+        <button class="prev" onclick="moveSlide(-1)">Previous</button>
+        <button class="next" onclick="moveSlide(1)">Next</button>
+      </div>
   </div>
-</footer>
-
-  <script src="js/main.js"></script>
+</main>
+  <script src="js/personal.js"></script>
 </body>
 
 </html>
