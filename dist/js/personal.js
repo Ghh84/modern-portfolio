@@ -32,6 +32,7 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
 //slide images
 let slideIndex = 0;
 
@@ -54,3 +55,29 @@ function showSlide(n) {
 }
 
 showSlide(slideIndex);
+
+// uplading file
+document.getElementById('fileInput').addEventListener('change', handleFileSelect);
+
+function handleFileSelect(event) {
+    const files = event.target.files;
+    const imageContainer = document.getElementById('imageContainer');
+    imageContainer.innerHTML = ''; // Clear previous images
+
+    for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            const img = document.createElement('img');
+            img.src = e.target.result;
+            img.alt = file.name;
+            img.classList.add('uploaded-image');
+            imageContainer.appendChild(img);
+        };
+
+        reader.readAsDataURL(file);
+    }
+}
+
+
