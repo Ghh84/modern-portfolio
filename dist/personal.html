@@ -69,7 +69,8 @@
     </h1>
     <div class="slider-container">
       <div class="slider">
-        <img src="./img/project/project2.jpg" alt="image 1">   
+        <div id="imageContainer"></div>
+        <img src="./img/project/project2.jpg" alt="">   
         <img src="./img/project/project1.jpg" alt="">
         <img src="./img/project/project3.jpg" alt="">
         <img src="./img/project/project4.jpg" alt="">
@@ -78,6 +79,8 @@
         <button class="prev" onclick="moveSlide(-1)">Previous</button>
         <button class="next" onclick="moveSlide(1)">Next</button>
       </div>
+      <h3 >Uploading new image...</h3>
+    <input type="file" id="fileInput" accept="./img/project/*" multiple>
   </div>
 </main>
   <script src="js/personal.js"></script>
