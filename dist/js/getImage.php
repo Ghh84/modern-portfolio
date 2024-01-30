@@ -11,7 +11,7 @@ foreach ($allowedExtensions as $extension) {
     $images = array_merge($images, glob($imageFolder . '/*.' . $extension));
 }
 
-$numberOfImages = 12;
+$numberOfImages = count($images);
 
 echo "Number of images in the folder: $numberOfImages";
 
