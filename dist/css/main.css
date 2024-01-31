@@ -114,116 +114,23 @@ li a:hover {
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-* {
-  box-sizing: border-box; }
-
-body {
-  background: #716683;
-  color: #000;
-  height: 100%;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
-  body#bg-img {
-    background: url(../img/background.jpg);
-    background-attachment: fixed;
-    background-size: cover; }
-    body#bg-img:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(113, 102, 131, 0.9); }
-
-p {
-  text-align: justify;
-  text-justify: inter-word; }
-
-h1, h2, h3 {
-  margin: 0;
-  font-weight: 300; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 4rem;
-    text-align: center; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(118, 106, 137, 0.5); }
-  h1.text, h2.text, h3.text {
-    color: #444; }
-
-a {
-  color: white;
-  text-decoration: none; }
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%; }
-
-.text-secondary {
-  color: #b3db24; }
-
-main {
-  padding: 4rem;
-  min-height: calc(100vh - 65px); }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: #b3db24;
-        transition: all 0.5s ease-out; }
-
-.home-grid {
+#services {
   display: grid;
   gap: 30px;
-  grid-template-areas: 'bioimg bio bio';
-  grid-template-columns: repeat(3, 1fr); }
-  .home-grid .bio-image {
-    grid-area: bioimg;
+  grid-template-areas: 'text img';
+  grid-template-columns: repeat(2, 1fr); }
+  #services .left-side-content {
+    grid-area: text;
     margin: auto;
     border-radius: 50%;
     border: #b3db24 3px solid; }
-  .home-grid .bio {
-    grid-area: bio;
+  #services .right-side-content {
+    grid-area: img;
     font-size: 1.5rem; }
-
-.about-info {
-  display: grid;
-  gap: 30px;
-  grid-template-areas: "bioimg bio bio" "\a     job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
-    grid-area: bioimg;
-    margin: auto;
-    border-radius: 50%;
-    border: #b3db24 3px solid; }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #7d7291;
-    padding: 0.5rem;
-    border-bottom: #b3db24 5px solid; }
-
-.projects {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr); }
-  .projects img {
+  #services img {
     width: 100%;
     border: 3px #fff solid; }
-    .projects img:hover {
+    #services img:hover {
       opacity: 0.5;
       border-color: #b3db24;
       transition: all 0.5s ease-out; }
@@ -246,45 +153,6 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
-
-.btn, .btn-dark, .btn-light {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #b3db24;
-    color: #000; }
-
-.btn-dark {
-  background: black;
-  color: #fff; }
-
-.btn-light {
-  background: #f4f3f5;
-  color: #333; }
-
-.form {
-  align-items: center;
-  align-content: center;
-  background-image: url(../dist/img/project/project1.jpg);
-  padding: 20px 50px;
-  color: #191a19;
-  font-size: 20px; }
-  .form .btn-submit {
-    background-color: #450ce4;
-    color: white;
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px; }
-    .form .btn-submit:hover {
-      background-color: #45a049; }
 
 .slider {
   display: block;
@@ -457,26 +325,158 @@ button:hover {
   color: #fff;
   cursor: pointer; }
 
-#services {
+.projects {
   display: grid;
-  gap: 30px;
-  grid-template-areas: 'text img';
-  grid-template-columns: repeat(2, 1fr); }
-  #services .left-side-content {
-    grid-area: text;
-    margin: auto;
-    border-radius: 50%;
-    border: #b3db24 3px solid; }
-  #services .right-side-content {
-    grid-area: img;
-    font-size: 1.5rem; }
-  #services img {
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
     width: 100%;
     border: 3px #fff solid; }
-    #services img:hover {
+    .projects img:hover {
       opacity: 0.5;
       border-color: #b3db24;
       transition: all 0.5s ease-out; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #716683;
+  color: #000;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+  body#bg-img {
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(113, 102, 131, 0.9); }
+
+p {
+  text-align: justify;
+  text-justify: inter-word; }
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 300; }
+  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+    font-size: 4rem;
+    text-align: center; }
+  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(118, 106, 137, 0.5); }
+  h1.text, h2.text, h3.text {
+    color: #444; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+.text-secondary {
+  color: #b3db24; }
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 65px); }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #b3db24;
+        transition: all 0.5s ease-out; }
+
+.home-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-areas: 'bioimg bio bio';
+  grid-template-columns: repeat(3, 1fr); }
+  .home-grid .bio-image {
+    grid-area: bioimg;
+    margin: auto;
+    border-radius: 50%;
+    border: #b3db24 3px solid; }
+  .home-grid .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+
+.about-info {
+  display: grid;
+  gap: 30px;
+  grid-template-areas: "bioimg bio bio" "\a     job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    grid-area: bioimg;
+    margin: auto;
+    border-radius: 50%;
+    border: #b3db24 3px solid; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #7d7291;
+    padding: 0.5rem;
+    border-bottom: #b3db24 5px solid; }
+
+.btn, .btn-dark, .btn-light {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #b3db24;
+    color: #000; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #f4f3f5;
+  color: #333; }
+
+.form {
+  align-items: center;
+  align-content: center;
+  background-image: url(../dist/img/project/project1.jpg);
+  padding: 20px 50px;
+  color: #191a19;
+  font-size: 20px; }
+  .form .btn-submit {
+    background-color: #450ce4;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px; }
+    .form .btn-submit:hover {
+      background-color: #45a049; }
 
 #main-footer {
   text-align: center;
