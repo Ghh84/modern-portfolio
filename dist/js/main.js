@@ -93,4 +93,8 @@ function validateName(name) {
   // Test the name against the regex pattern
   return nameRegex.test(name);
 }
+// Refresh page button
+function refreshPage() {
+  window.location.reload();
+}
 
